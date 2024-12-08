@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+    
+        <li class="breadcrumb-item"><a href="https://en.wikipedia.org/wiki/Bharatiya_Janata_Party">BJP</a></li>
+        <li class="breadcrumb-item active" aria-current="page">NEW CM</li>
+      </ol>
+    </nav>
+   
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container">
+            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+              <!-- Navbar content -->
+            </nav>
+            <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Bharatiya_Janata_Party">
+              <img src="data:image/png;base64,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" alt="Bootstrap" width="60" height="50">
+            </a>
+          </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">BJP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MAHARASHTRA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CM AND DEPUTY CM
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">DEVENDRA FADNAVIS</a></li>
+                <li><a class="dropdown-item" href="#">EKNATH SHINDE</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">AJIT PAWAR</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="btn-group" role="group" aria-label="Basic mixed styles example">
+  <button style="width: 200px;" type="button" class="btn btn-danger">DEVENDRA FADNAVIS</button>
+  <button style="width: 150px;" type="button" class="btn btn-warning">AJIT PAWAR</button>
+  <button style="width: 150px;" type="button" class="btn btn-success">EKNATH SHINDE</button>
+</div>
+    <div class="jumbotron">
+      <h1 style="color: blue;" class="display-4">NEW CM OF MAHARASHTRA</h1>
+      <img src="./images/fadnavis.jpg" width="150px">
+      <p style="color:darkorange;" class="lead">Maharashtra gets new CM</p>
+      <hr class="my-4">
+      <p>Congratulations and best wishes to shri devendra fadnavis ji on being elected as the leader of the maharashtra BJP Legislative Party</p>
+    
+    </div>
+    <h1
+      style="
+        color: darkkhaki;
+        background-color: darkmagenta;
+        width: 300px;
+        border-radius: 30px;
+      "
+    >
+      ACCORDION
+    </h1>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            NEW CM OF MAHARASHTRA-DEVENDRA FADNAVIS
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <img style="width: 400px" src="./images/IMG_20241205_212215.jpg" />
+            <img
+              style="
+                margin: 20px;
+                border-radius: 50px;
+                border: 5px dotted black;
+              "
+              src="./images/fadnavis.jpg"
+            />
+            <strong style="color: blue"
+              >Devendra Fadnavis is the new CM of Maharashtra.</strong
+            >Devendra Sarita Gangadharrao Fadnavis(born 22 July 1970) is an
+            Indian politician and currently serving Chief Minister of
+            Maharashtra since 5 December 2024. He previously served as the
+            Deputy Chief Minister of Maharashtra, alongside Ajit Pawar in the
+            Eknath Shinde government. He previously held the position of Chief
+            Minister of Maharashtra from 31 October 2014 to 12 November 2019.
+            From 2019 to 2022, he served as the Leader of the Opposition in the
+            Maharashtra Legislative Assembly. He was the President of BJP's
+            Maharashtra state unit from 2013 to 2015.[4]
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            NEW DEPUTY CM OF MAHARASHTRA-EKNATH SHINDE
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <img src="./images/shinde.jpg" />
+
+            <strong style="color: aqua"
+              >Eknath shinde is the new Deputy CM of Maharashtra.</strong
+            >Eknath Sambhaji shinde born on 9 February 1964 is an Indian
+            politician who is serving as the Deputy Chief Minister of
+            Maharashtra since December 2024 alongside Ajit Pawar. He is the
+            chairperson of Shiv Sena[4] since February 2023 and the former Chief
+            Minister of Maharashtra, serving from June 2022 to December 2024. He
+            is also the Member of Legislative Assembly for the Kopri-Pachpakhadi
+            constituency[5] of Thane, Maharashtra, since 2009 and was formerly
+            the MLA of Thane constituency from 2004 to 2009.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            ANOTHER DEPUTY CM OF MAHARASHTRA-AJIT PAWAR
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <img src="./images/ajit pawar.jpg" />
+            <strong style="color: brown"
+              >Ajit pawar serving as the Deputy CM of Maharashtra along with
+              shinde.</strong
+            >Ajit Anantrao Pawar[2] (Marathi pronunciation: [əd͡ʒit̪ pəʋaːɾ]; born
+            22 July 1959)[3] is an Indian politician from Maharashtra serving as
+            the Current Deputy Chief Minister of Maharashtra along with Eknath
+            Shinde since 5 December 2024 . He previously served as the Deputy
+            Chief Minister of Maharashtra in the previous Eknath Shinde
+            government.[4] He served as the Leader of the Opposition in the
+            Maharashtra Legislative Assembly from 2022 to 2023 and represented
+            Baramati Lok Sabha constituency in 1991.[5][6] He served as deputy
+            chief minister many times.[7]
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1
+      style="
+        color: brown;
+        text-align: left;
+        background-color: aquamarine;
+        width: 200px;
+      "
+    >
+      CARD
+    </h1>
+    <div class="card" style="width: 18rem">
+      <img
+        style="border: 10px ridge black"
+        src="./images/modi.jpeg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title" style="color: blue">NARENDRA MODI</h5>
+        <p class="card-text">
+          Narendra Damodardas Modi[a] (born 17 September 1950)[b] is an Indian
+          politician who has served as Prime Minister of India since 2014. Modi
+          was the chief minister of Gujarat from 2001 to 2014 and is the member
+          of parliament (MP) for Varanasi. He is a member of the Bharatiya
+          Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a
+          right-wing Hindu nationalist paramilitary volunteer organisation. He
+          is the longest-serving prime minister outside the Indian National
+          Congress.[4]
+        </p>
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      VOTE YES OR NO
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              NARENDRA MODI
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Do you like narendra modi</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Yes
+            </button>
+            <button type="button" class="btn btn-danger">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 style="color: greenyellow; background-color: blueviolet; width: 150px;margin: 50px;">BADGE</h1>
+    <h1>NARENDRA MODI<span class="badge text-bg-primary">PM OF INDIA</span></h1>
+<h2>AMIT SHAH<span class="badge text-bg-secondary">HM OF INDIA</span></h2>
+<h3>KISHAN REDDY<span class="badge text-bg-success">TS BJP PRESIDENT</span></h3>
+<h4>EATALA RAJENDER <span class="badge text-bg-danger">MP OF MALKAJGIRI</span></h4>
+<h5>BANDI SANJAY <span class="badge text-bg-light text dark">MOS OF STATE FOR HOME AFFAIRS OF INDIA</span></h5>
+<h6>NIRMALA SITHARAMAN<span class="badge text-bg-info text dark">FINANCE MINISTER</span></h6>
+<h1 style="color: brown; background-color: aqua; width: 300px;margin: 60px;">BUTTONS</h1>
+<button type="button" class=".text-nowrap">EATALA RAJENDER</button>
+<button type="button" class="btn btn-outline-secondary">BANDI SANJAY</button>
+<button type="button" class="btn btn-outline-success">KISHAN REDDY</button>
+<button type="button" class="btn btn-outline-danger">RAJA SINGH</button>
+<button type="button" class="btn btn-outline-warning">DK ARUNA</button>
+<button type="button" class="btn btn-outline-info">RAGHUNANDHAN RAO</button>
+<button type="button" class="btn btn-outline-light">KONDA VISHESHWAR</button>
+<button type="button" class="btn btn-outline-dark">MAHESHWAR REDDY</button> 
+
+<h1 style="color: brown; margin: 30px;">carousels</h1>
+<div style="margin: 50px;" id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div style="width: 500px;" class="carousel-item active">
+      <img style="width: 300px;" src="./images/FADNAVIS MODI2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div style="width: 500px;" class="carousel-item">
+      <img style="width: 300px;" src="./images/shinde.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div style="width: 500px;" class="carousel-item">
+      <img src="./images/ajit pawar.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<h1 style="color: slateblue;">Automatic carousels</h1>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div style="width: 600px;" class="carousel-item active">
+      <img src="./images/Fadnavis-modi.webp" class="d-block w-100" alt="...">
+  
+    </div>
+    <div style="width: 600px;" class="carousel-item">
+      <img src="./images/shinde-modi.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div style="width: 600px;" class="carousel-item">
+      <img src="./images/ajit-modi.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<p style="margin: 60px;" class="d-inline-flex gap-1">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">CHEIF MINISTER</a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">DEPUTY CHEIF MINISTERS</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">CHEIF MINISTER AND DEPUTY CHEIF MINISTERS</button>
+</p>
+<div  class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="rohit sharma">
+  Devendra fadnavis is new cheif minister of maharashtra.He previously served as the Deputy Chief Minister of Maharashtra, alongside Ajit Pawar in the Eknath Shinde government
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+  Eknath shinde and Ajit pawar are the new deputy cheif ministers of maharashtra.Eknath shinde is the leader from shivasena and ajit pawar from NCP.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel">CM OF MAHARASHTRA</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  DEVENDRA FADNAVIS IS THE NEW CM OF MAHARASHTRA AND AJIT PAWAR ALONG WITH EKNATH SHINDE SERVING AS THE DEPUTY CM OF MAHARASHTRA
+  </div>
+</div>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">TOP BJP LEADERS</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>This document indicates the leaders of maharashtra</p>
+  </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="https://en.wikipedia.org/wiki/Bharatiya_Janata_Party,_Maharashtra" aria-label="BJP MAHARSHTRA">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="https://en.wikipedia.org/wiki/Devendra_Fadnavis">FADNAVIS</a></li>
+    <li class="page-item"><a class="page-link" href="https://en.wikipedia.org/wiki/Eknath_Shinde">EKNATH SHINDE</a></li>
+    <li class="page-item"><a class="page-link" href="https://en.wikipedia.org/wiki/Ajit_Pawar">AJIT PAWAR</a></li>
+    <li class="page-item">
+      <a class="page-link" href="https://maharashtra.bjp.org/" aria-label="BJP MAHARASHTRA">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+    
+  </body>
+</html>
